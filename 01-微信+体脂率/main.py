@@ -1,7 +1,6 @@
 import itchat
 import re
 
-
 class Person:
     def __init__(self, name, sex, age, height, weight):
         try:
@@ -44,14 +43,10 @@ class Person:
         return result_notice
         # print(result_notice)
 
-
-
 # 先获取我们自己的账号标识
-
 
 itchat.auto_login(hotReload=True)
 myself_username = itchat.get_friends()[0]["UserName"]
-
 
 @itchat.msg_register(itchat.content.FRIENDS)
 def add_friend(msg):
@@ -75,8 +70,5 @@ def text_reply(msg):
         else:
             itchat.send_msg("请严格按照数据格式输入：姓名，性别，年龄，身高（cm），体重(kg)",toUserName=msg["FromUserName"])
 
-
-
 itchat.run()
-
 
