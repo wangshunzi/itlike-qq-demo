@@ -49,4 +49,3 @@ with open("sz_header.png", "wb") as f:
 
 add_hat("sz_header.png", "sz_hat.png")
 
-

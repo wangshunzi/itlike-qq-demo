@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>撩课-性别统计-饼状图</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="893a69f59d7844bb8bc07c116a797c50" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_893a69f59d7844bb8bc07c116a797c50 = echarts.init(
+            document.getElementById('893a69f59d7844bb8bc07c116a797c50'), 'white', {renderer: 'canvas'});
+        var option_893a69f59d7844bb8bc07c116a797c50 = {
+    "color": [
+        "gray",
+        "orange",
+        "pink"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6027\u522b",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u672a\u77e5",
+                    "value": 34
+                },
+                {
+                    "name": "\u7537",
+                    "value": 547
+                },
+                {
+                    "name": "\u5973",
+                    "value": 220
+                }
+            ],
+            "radius": [
+                "30%",
+                "70%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "area",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u672a\u77e5",
+                "\u7537",
+                "\u5973"
+            ],
+            "selected": {}
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    }
+};
+        chart_893a69f59d7844bb8bc07c116a797c50.setOption(option_893a69f59d7844bb8bc07c116a797c50);
+    </script>
+</body>
+</html>
